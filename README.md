@@ -21,3 +21,12 @@ a separate installation from (https://www.fmod.com/download). Download
 and install version 1.09.x of the FMOD Studio API (newer versions are untested).
 On Windows, install FMOD to the default directory. On Mac, copy the contents
 of the FMOD package into External/FMOD.
+
+To compile on Linux, install g++ and download FMOD API and uncompress in this
+same directory as this README.md.  Rename the directory created to fmodlinux 
+Install the dependencis pkg-config GLEW, rapidjson, sdl2, sdl2_image, sdl2_ttf,
+sdl2_mixer, and SOIL.  Then change in a Chapter directory you want to compile
+and execute make.  For chapter07 and beyond. Use for x86_64 
+$ export LD_LIBRARY_PATH=../fmodlinux/api/lowlevel/lib/x86_64:../fmodlinux/api/studio/lib/x86_64:$LD_LIBRARY_PATH
+For Chapter08 you need to use a gamepad for input.
+

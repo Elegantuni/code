@@ -10,6 +10,7 @@
 #include "Game.h"
 #include "Component.h"
 #include "LevelLoader.h"
+#include <algorithm>
 
 const char* Actor::TypeNames[NUM_ACTOR_TYPES] = {
 	"Actor",
