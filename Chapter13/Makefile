@@ -1,8 +1,8 @@
 chapter13:
 	rm -f SDL
 	ln -s /usr/include/SDL2 SDL
-	g++ -c *.cpp -I/home/groundup/sourcecode/game_programming_in_c++/fmodlinux/api/lowlevel/inc -I/home/groundup/sourcecode/game_programming_in_c++/fmodlinux/api/studio/inc
-	g++ -o chapter13 `ls *.o` `pkg-config --libs sdl2` `pkg-config --libs SDL2_image` `pkg-config --libs SDL2_ttf` -lGL -lGLEW -lSOIL -L/home/groundup/sourcecode/game_programming_in_c++/fmodlinux/api/lowlevel/lib/x86_64 -lfmod -L/home/groundup/sourcecode/game_programming_in_c++/fmodlinux/api/studio/lib/x86_64 -lfmodstudio
+	g++ -c *.cpp -I../fmodlinux/api/lowlevel/inc -I../fmodlinux/api/studio/inc
+	g++ -o chapter13 `ls *.o` `pkg-config --libs sdl2` `pkg-config --libs SDL2_image` `pkg-config --libs SDL2_ttf` -lGL -lGLEW -lSOIL -L../fmodlinux/api/lowlevel/lib/x86_64 -lfmod -L../fmodlinux/api/studio/lib/x86_64 -lfmodstudio
 	
 clean:
 	rm -f chapter13 SDL *.o
